@@ -1,22 +1,8 @@
 .intro {
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.intro::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: -150%;
-  background: url(../img/bg1.svg);
-  background-size: 45%;
-  background-repeat: no-repeat;
-  background-position: right top;
-  z-index: 0;
 }
 
 .intro-texto {
@@ -25,7 +11,7 @@
 }
 
 .intro-img {
-  height: 500px;
+  height: 450px;
   z-index: 1;
 }
 
@@ -37,9 +23,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: auto;
   width: 90%;
-  z-index: 1;
 }
 
 .que-es .contenido,
@@ -57,6 +42,7 @@
 
 .que-es img,
 .alcance img {
+  margin-left: 5%;
   height: 400px;
 }
 
@@ -104,11 +90,12 @@
 }
 
 .desarrolla img {
+  margin-left: 5%;
   height: 300px;
 }
 
 .opciones {
-  height: 100vh;
+  height: auto;
   width: 90%;
 }
 
@@ -161,4 +148,393 @@
   font-weight: bold;
   font-size: 20px;
   background-color: #2dd899;
+}
+
+.que-es {
+  z-index: 10;
+}
+
+.valor {
+  z-index: 9;
+}
+
+.alcance {
+  z-index: 10;
+}
+
+.implementa {
+  z-index: 11;
+}
+
+.desarrolla {
+  z-index: 12;
+}
+
+.opciones {
+  z-index: 0;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  background: url(../img/bg1.svg);
+  background-size: 33%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  z-index: 0;
+}
+
+.valor::before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  bottom: -120%;
+  background: url(../img/bg2.svg);
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  z-index: -1;
+}
+
+.alcance::before {
+  content: "";
+  position: absolute;
+  top: 125%;
+  left: 0;
+  right: 0;
+  bottom: -250%;
+  background: url(../img/bg3.svg);
+  background-size: 33%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  z-index: -2;
+}
+
+.desarrolla::before {
+  content: "";
+  position: absolute;
+  top: 260%;
+  left: 0;
+  right: 0;
+  bottom: -270%;
+  background: url(../img/bg4.svg);
+  background-size: 17%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  z-index: -1;
+}
+
+.opciones::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  bottom: -325%;
+  background: url(../img/bg5.svg);
+  background-size: 17%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  z-index: -2;
+}
+
+@media (max-width: 1399.98px) {
+  .que-es,
+  .valor,
+  .alcance,
+  .implementa,
+  .desarrolla,
+  .opciones {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .intro-texto {
+    width: 50%;
+  }
+
+  .que-es,
+  .valor,
+  .alcance,
+  .implementa,
+  .desarrolla,
+  .opciones {
+    width: 90%;
+  }
+
+  .que-es .texto,
+  .alcance .texto,
+  .valor .texto,
+  .implementa .texto {
+    width: 60%;
+  }
+
+  .que-es img,
+  .alcance img {
+    height: 350px;
+  }
+
+  .valor img,
+  .implementa img {
+    margin-left: 0;
+    margin-right: 5%;
+    height: 300px;
+  }
+
+  .implementa .divider-right,
+  .desarrolla .divider-left {
+    margin-bottom: 10px;
+  }
+
+  .implementa .texto {
+    width: 60%;
+  }
+
+  .card-opciones {
+    height: 250px;
+    width: 350px;
+  }
+
+  .card-opciones .texto {
+    top: -60px;
+  }
+
+  .card-opciones img {
+    height: 200px;
+    top: -70px;
+  }
+
+  .intro::before {
+    background-size: 44%;
+  }
+
+  .valor::before {
+    background-size: 35%;
+  }
+
+  .alcance::before {
+    background-size: 45%;
+  }
+
+  .desarrolla::before {
+    background-size: 25%;
+  }
+
+  .opciones::before {
+    background-size: 23%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .intro-texto {
+    width: 70%;
+  }
+
+  .que-es img,
+  .alcance img {
+    height: 300px;
+  }
+
+  .que-es .texto,
+  .alcance .texto,
+  .valor .texto,
+  .implementa .texto {
+    width: 70%;
+  }
+
+  .valor img,
+  .implementa img {
+    height: 250px;
+  }
+
+  .implementa .divider-right,
+  .desarrolla .divider-left {
+    margin-bottom: 10px;
+  }
+
+  .implementa .texto {
+    width: 60%;
+  }
+
+  .desarrolla img {
+    height: 250px;
+  }
+
+  .card-opciones {
+    height: 250px;
+    width: 300px;
+  }
+
+  .card-opciones .texto {
+    top: -50px;
+  }
+
+  .card-opciones img {
+    height: 200px;
+    top: -60px;
+  }
+
+  .valor::before {
+    top: 95%;
+    bottom: -70%;
+  }
+
+  .alcance::before {
+    top: 140%;
+    bottom: -135%;
+  }
+
+  .desarrolla::before {
+    top: 235%;
+    bottom: -180%;
+  }
+
+  .opciones::before {
+    bottom: -255%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .que-es,
+  .valor,
+  .alcance,
+  .implementa,
+  .desarrolla,
+  .opciones {
+    width: 90%;
+  }
+
+  .intro-texto {
+    width: 90%;
+  }
+
+  .intro-img {
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  .que-es,
+  .valor,
+  .alcance,
+  .implementa,
+  .desarrolla {
+    flex-direction: column;
+  }
+
+  .que-es .contenido,
+  .alcance .contenido,
+  .desarrolla .contenido,
+  .valor .contenido,
+  .implementa .contenido {
+    flex-direction: column;
+  }
+
+  .que-es img,
+  .alcance img {
+    margin: 0;
+    margin-top: 40px;
+    height: 350px;
+  }
+
+  .valor img,
+  .implementa img,
+  .desarrolla img {
+    margin: 0;
+    margin-top: 40px;
+    height: 300px;
+  }
+
+  .implementa .divider-right,
+  .desarrolla .divider-left {
+    margin-bottom: 10px;
+  }
+
+  .que-es .texto,
+  .alcance .texto,
+  .valor .texto,
+  .implementa .texto,
+  .desarrolla .texto {
+    width: 100%;
+  }
+
+  .opciones .contenido {
+    justify-content: space-between;
+  }
+
+  .card-opciones {
+    margin: 0 20px;
+    height: 250px;
+    width: 350px;
+  }
+
+  .card-opciones .texto {
+    top: -40px;
+  }
+
+  .card-opciones img {
+    height: 180px;
+    top: -50px;
+  }
+
+  .intro::before {
+    background: none
+  }
+
+  .valor::before {
+    background: none
+  }
+
+  .alcance::before {
+    background: none
+  }
+
+  .desarrolla::before {
+    background: none
+  }
+
+  .opciones::before {
+    background: none
+  }
+}
+
+@media (max-width: 575.98px) {
+  .intro {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intro-texto {
+    width: 90%;
+  }
+
+  .intro-img {
+    height: 250px;
+    margin-top: 20px;
+  }
+
+  .implementa .divider-right,
+  .desarrolla .divider-left {
+    margin-bottom: 5px;
+  }
+
+  .texto {
+    width: 80%;
+    text-align: start;
+  }
+
+  .opciones .contenido {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .card-opciones {
+    margin: 50px 0;
+  }
 }

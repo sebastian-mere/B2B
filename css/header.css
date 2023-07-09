@@ -74,3 +74,17 @@
   .activo {
     font-weight: bolder;
   }
+
+  @media (max-width: 1199.98px) {
+    header {
+     padding: 10px 30px;
+    }
+
+    .menu {
+      margin-left: 30px
+    }
+
+    .contact-button a {
+      display: none;
+    }
+  }
