@@ -24,8 +24,12 @@
   margin-top: 0;
 }
 
+.intro2 div p:last-child,
+.segmenta div p:last-child {
+  margin: 20px 0 0 0;
+}
+
 .intro2,
-.catalogo,
 .segmenta,
 .market,
 .leads,
@@ -37,7 +41,9 @@
   width: 90%;
 }
 
-.catalogo .contenido,
+.todob2b .contenido,
+.segmenta .contenido,
+.leads .contenido,
 .market .contenido,
 .promocione .contenido {
   display: flex;
@@ -45,8 +51,9 @@
   align-items: center;
 }
 
-.catalogo .texto {
-  width: 50%;
+.todob2b .texto {
+  text-align: end;
+  width: 70%;
 }
 
 .market .texto,
@@ -54,19 +61,17 @@
   width: 100%;
 }
 
-.catalogo img {
-  margin-left: 5%;
+.todob2b img {
+  margin-right: 5%;
   height: 400px;
 }
 
-.catalogo .contenido .texto li,
+.todob2b .contenido .texto li,
 .promocione .contenido .texto li {
   padding: 15px 0;
   font-size: 24px;
 }
-
-.segmenta .contenido,
-.leads .contenido {
+.todob2b .contenido {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -74,19 +79,21 @@
 }
 
 .segmenta h2,
-.leads h2,
 .opciones h2 {
   text-align: end;
 }
 
-.segmenta .texto,
-.leads .texto {
-  width: 60%;
+.segmenta .texto {
+  width: 70%;
   text-align: end;
 }
 
+.leads .texto{
+    width: 70%;
+}
+
 .segmenta img {
-  margin-right: 5%;
+  margin-left: 5%;
   height: 300px;
 }
 
@@ -96,7 +103,7 @@
 }
 
 .leads img {
-  margin-right: 5%;
+  margin-left: 5%;
   height: 300px;
 }
 
@@ -161,7 +168,7 @@
   background-color: #00ba75;
 }
 
-.catalogo {
+.todob2b {
   z-index: 10;
 }
 
@@ -170,6 +177,7 @@
 }
 
 .market {
+    text-align: right;
   z-index: 10;
 }
 
@@ -198,42 +206,42 @@
   border-radius: 15px;
   background-color: #00ba75;
 }
-
-.genera::before {
-  content: "";
-  position: absolute;
-  inset: 590px 0px -490px;
-  background: url(../img/bg-m1.svg);
-  background-size: 17%;
-  background-repeat: no-repeat;
-  background-position: left center;
-  z-index: 0;
-}
-
-.catalogo::before {
-  content: "";
-  position: absolute;
-  inset: 1180px 0px -1080px;
-  background: url(../img/bg-m2.svg);
-  background-size: 13%;
-  background-repeat: no-repeat;
-  background-position: right center;
-  z-index: -1;
-}
-
-.segmenta::before {
-  content: "";
-  position: absolute;
-  inset: 2120px 0px -1960px;
-  background: url(../img/bg-m3.svg);
-  background-size: 21%;
-  background-repeat: no-repeat;
-  background-position: left center;
-  z-index: -2;
-}
+/*
+  .genera::before {
+    content: "";
+    position: absolute;
+    inset: 590px 0px -490px;
+    background: url(../img/bg-m1.svg);
+    background-size: 17%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    z-index: 0;
+  }
+  
+  .todob2b::before {
+    content: "";
+    position: absolute;
+    inset: 1180px 0px -1080px;
+    background: url(../img/bg-m2.svg);
+    background-size: 13%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    z-index: -1;
+  }
+  
+  .segmenta::before {
+    content: "";
+    position: absolute;
+    inset: 2120px 0px -1960px;
+    background: url(../img/bg-m3.svg);
+    background-size: 21%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    z-index: -2;
+  }*/
 
 @media (max-width: 1399.98px) {
-  .catalogo,
+  .todob2b,
   .segmenta,
   .market,
   .leads,
@@ -251,7 +259,7 @@
     height: 250px;
   }
 
-  .catalogo,
+  .todob2b,
   .segmenta,
   .market,
   .leads,
@@ -260,21 +268,19 @@
     width: 90%;
   }
 
-  .catalogo .texto,
+  .todob2b .texto,
   .segmenta .texto,
   .leads .texto {
     width: 60%;
   }
 
-  .catalogo img,
+  .todob2b img,
   .market img {
     height: 300px;
   }
 
   .segmenta img,
   .leads img {
-    margin-left: 0;
-    margin-right: 5%;
     height: 250px;
   }
 
@@ -306,7 +312,7 @@
     background-size: 17%;
   }
 
-  .catalogo::before {
+  .todob2b::before {
     inset: 1240px 0px -1080px;
     background-size: 13%;
   }
@@ -326,11 +332,11 @@
     height: 200px;
   }
 
-  .catalogo img {
+  .todob2b img {
     height: 250px;
   }
 
-  .catalogo .texto,
+  .todob2b .texto,
   .segmenta .texto,
   .leads .texto {
     width: 70%;
@@ -387,7 +393,7 @@
     bottom: -255%;
   }
 
-  .catalogo .contenido .texto li,
+  .todob2b .contenido .texto li,
   .promocione .contenido .texto li {
     padding: 15px 0;
     font-size: 20px;
@@ -398,7 +404,7 @@
     background-size: 17%;
   }
 
-  .catalogo::before {
+  .todob2b::before {
     inset: 550px 0px -1080px;
     background-size: 13%;
   }
@@ -410,7 +416,7 @@
 }
 
 @media (max-width: 767.98px) {
-  .catalogo,
+  .todob2b,
   .segmenta,
   .market,
   .leads,
@@ -433,7 +439,7 @@
     margin-top: 20px;
   }
 
-  .catalogo,
+  .todob2b,
   .segmenta,
   .market,
   .leads,
@@ -441,7 +447,7 @@
     flex-direction: column;
   }
 
-  .catalogo .contenido,
+  .todob2b .contenido,
   .market .contenido,
   .promocione .contenido,
   .segmenta .contenido,
@@ -449,7 +455,7 @@
     flex-direction: column;
   }
 
-  .catalogo img,
+  .todob2b img,
   .market img {
     margin: 0;
     margin-top: 40px;
@@ -469,7 +475,7 @@
     margin-bottom: 10px;
   }
 
-  .catalogo .texto,
+  .todob2b .texto,
   .market .texto,
   .segmenta .texto,
   .leads .texto,
@@ -504,7 +510,7 @@
     background: none;
   }
 
-  .catalogo::before {
+  .todob2b::before {
     background: none;
   }
 
@@ -512,7 +518,7 @@
     background: none;
   }
 
-  .catalogo .contenido .texto li,
+  .todob2b .contenido .texto li,
   .promocione .contenido .texto li {
     padding: 15px 0;
     font-size: 16px;
@@ -544,7 +550,7 @@
     margin-top: 20px;
   }
 
-  .catalogo img,
+  .todob2b img,
   .market img {
     height: 250px;
   }

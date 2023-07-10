@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 80vw;
 }
 
 .intro-texto {
@@ -167,7 +168,7 @@
 }
 
 .desarrolla {
-  z-index: 12;
+  z-index: 10;
 }
 
 .opciones {
@@ -236,7 +237,7 @@
   top: 0%;
   left: 0;
   right: 0;
-  bottom: -325%;
+  bottom: -280%;
   background: url(../img/bg5.svg);
   background-size: 17%;
   background-repeat: no-repeat;
@@ -397,7 +398,7 @@
   }
 
   .opciones::before {
-    bottom: -255%;
+    bottom: -230%;
   }
 }
 
