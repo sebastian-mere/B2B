@@ -300,24 +300,19 @@
     top: -70px;
   }
 
-  .intro::before {
-    background-size: 44%;
+  .genera::before {
+    inset: 700px 0px -490px;
+    background-size: 17%;
+  }
+
+  .catalogo::before {
+    inset: 1240px 0px -1080px;
+    background-size: 13%;
   }
 
   .segmenta::before {
-    background-size: 35%;
-  }
-
-  .market::before {
-    background-size: 45%;
-  }
-
-  .promocione::before {
-    background-size: 25%;
-  }
-
-  .opciones::before {
-    background-size: 23%;
+    inset: 2230px 0px -1960px;
+    background-size: 21%;
   }
 }
 
@@ -335,7 +330,6 @@
   }
 
   .catalogo .texto,
-  .market .texto,
   .segmenta .texto,
   .leads .texto {
     width: 70%;
@@ -396,6 +390,21 @@
   .promocione .contenido .texto li {
     padding: 15px 0;
     font-size: 20px;
+  }
+
+  .genera::before {
+    inset: 200px 0px -490px;
+    background-size: 17%;
+  }
+
+  .catalogo::before {
+    inset: 550px 0px -1080px;
+    background-size: 13%;
+  }
+
+  .segmenta::before {
+    inset: 1180px 0px -1960px;
+    background-size: 21%;
   }
 }
 
@@ -490,19 +499,15 @@
     background: none;
   }
 
+  .genera::before {
+    background: none;
+  }
+
+  .catalogo::before {
+    background: none;
+  }
+
   .segmenta::before {
-    background: none;
-  }
-
-  .market::before {
-    background: none;
-  }
-
-  .promocione::before {
-    background: none;
-  }
-
-  .opciones::before {
     background: none;
   }
 
