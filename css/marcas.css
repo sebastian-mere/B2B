@@ -1,0 +1,567 @@
+.intro {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .intro-texto {
+    width: 60%;
+    z-index: 1;
+  }
+  
+  .intro-img {
+    height: 450px;
+    z-index: 1;
+  }
+  
+  .catalogo,
+  .segmenta,
+  .market,
+  .leads,
+  .promocione {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 90%;
+  }
+  
+  .catalogo .contenido,
+  .market .contenido,
+  .promocione .contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .catalogo .texto {
+    width: 50%;
+  }
+  
+  .market .texto,
+  .promocione .texto{
+    width: 100%;
+  }
+
+  .catalogo img{
+    margin-left: 5%;
+    height: 400px;
+  }
+  
+  .segmenta .contenido,
+  .leads .contenido {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .segmenta h2,
+  .leads h2,
+  .opciones h2 {
+    text-align: end;
+  }
+  
+  .segmenta .texto {
+    width: 50%;
+    text-align: end;
+  }
+  
+  .segmenta img {
+    margin-left: 5%;
+    height: 350px;
+  }
+  
+  .leads .divider-right,
+  .promocione .divider-left {
+    margin-bottom: 20px;
+  }
+  
+  .leads .texto {
+    width: 60%;
+    text-align: end;
+  }
+  
+  .leads img {
+    margin-right: 5%;
+    height: 300px;
+  }
+  
+  .promocione img {
+    margin-left: 5%;
+    height: 300px;
+  }
+  
+  .opciones {
+    height: auto;
+    width: 90%;
+  }
+  
+  .opciones .contenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+  }
+  
+  .card-opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    width: 450px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 10.8px 19.8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card-opciones .texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -80px;
+  }
+  
+  .card-opciones img {
+    height: 250px;
+    padding: 20px;
+    position: relative;
+    top: -90px;
+  }
+  
+  .card-opciones p {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .card-opciones a {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #00BA75;
+  }
+  
+  .catalogo {
+    z-index: 10;
+  }
+  
+  .segmenta {
+    z-index: 9;
+  }
+  
+  .market {
+    z-index: 10;
+  }
+  
+  .leads {
+    z-index: 11;
+  }
+  
+  .promocione {
+    z-index: 12;
+  }
+  
+  .opciones {
+    z-index: 0;
+  }
+  
+  .intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    background: url(../img/bg1.svg);
+    background-size: 33%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    z-index: 0;
+  }
+  
+  .segmenta::before {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    bottom: -120%;
+    background: url(../img/bg2.svg);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    z-index: -1;
+  }
+  
+  .market::before {
+    content: "";
+    position: absolute;
+    top: 125%;
+    left: 0;
+    right: 0;
+    bottom: -250%;
+    background: url(../img/bg3.svg);
+    background-size: 33%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    z-index: -2;
+  }
+  
+  .promocione::before {
+    content: "";
+    position: absolute;
+    top: 260%;
+    left: 0;
+    right: 0;
+    bottom: -270%;
+    background: url(../img/bg4.svg);
+    background-size: 17%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    z-index: -1;
+  }
+  
+  .opciones::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: -325%;
+    background: url(../img/bg5.svg);
+    background-size: 17%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    z-index: -2;
+  }
+  
+  @media (max-width: 1399.98px) {
+    .catalogo,
+    .segmenta,
+    .market,
+    .leads,
+    .promocione,
+    .opciones {
+      width: 100%;
+    }
+
+    .intro-img {
+    height: 350px;
+  }
+  }
+  
+  @media (max-width: 1199.98px) {
+    .intro-texto {
+      width: 50%;
+    }
+    .intro-img {
+    height: 300px;
+  }
+  
+    .catalogo,
+    .segmenta,
+    .market,
+    .leads,
+    .promocione,
+    .opciones {
+      width: 90%;
+    }
+  
+    .catalogo .texto,
+    .market .texto,
+    .segmenta .texto,
+    .leads .texto {
+      width: 60%;
+    }
+  
+    .catalogo img,
+    .market img {
+      height: 350px;
+    }
+  
+    .segmenta img,
+    .leads img {
+      margin-left: 0;
+      margin-right: 5%;
+      height: 300px;
+    }
+  
+    .leads .divider-right,
+    .promocione .divider-left {
+      margin-bottom: 10px;
+    }
+  
+    .leads .texto {
+      width: 60%;
+    }
+  
+    .card-opciones {
+      height: 250px;
+      width: 350px;
+    }
+  
+    .card-opciones .texto {
+      top: -60px;
+    }
+  
+    .card-opciones img {
+      height: 200px;
+      top: -70px;
+    }
+  
+    .intro::before {
+      background-size: 44%;
+    }
+  
+    .segmenta::before {
+      background-size: 35%;
+    }
+  
+    .market::before {
+      background-size: 45%;
+    }
+  
+    .promocione::before {
+      background-size: 25%;
+    }
+  
+    .opciones::before {
+      background-size: 23%;
+    }
+  }
+  
+  @media (max-width: 991.98px) {
+    .intro-texto {
+      width: 70%;
+    }
+  
+    .intro-img {
+    height: 300px;
+  }
+
+    .catalogo img,
+    .market img {
+      height: 300px;
+    }
+  
+    .catalogo .texto,
+    .market .texto,
+    .segmenta .texto,
+    .leads .texto {
+      width: 70%;
+    }
+  
+    .segmenta img,
+    .leads img {
+      height: 250px;
+    }
+  
+    .leads .divider-right,
+    .promocione .divider-left {
+      margin-bottom: 10px;
+    }
+  
+    .leads .texto {
+      width: 60%;
+    }
+  
+    .promocione img {
+      height: 250px;
+    }
+  
+    .card-opciones {
+      height: 250px;
+      width: 300px;
+    }
+  
+    .card-opciones .texto {
+      top: -50px;
+    }
+  
+    .card-opciones img {
+      height: 200px;
+      top: -60px;
+    }
+  
+    .segmenta::before {
+      top: 95%;
+      bottom: -70%;
+    }
+  
+    .market::before {
+      top: 140%;
+      bottom: -135%;
+    }
+  
+    .promocione::before {
+      top: 235%;
+      bottom: -180%;
+    }
+  
+    .opciones::before {
+      bottom: -255%;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .catalogo,
+    .segmenta,
+    .market,
+    .leads,
+    .promocione,
+    .opciones {
+      width: 90%;
+    }
+  
+    .intro {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .intro-texto {
+      width: 90%;
+    }
+  
+    .intro-img {
+      height: 300px;
+      margin-top: 20px;
+    }
+  
+    .catalogo,
+    .segmenta,
+    .market,
+    .leads,
+    .promocione {
+      flex-direction: column;
+    }
+  
+    .catalogo .contenido,
+    .market .contenido,
+    .promocione .contenido,
+    .segmenta .contenido,
+    .leads .contenido {
+      flex-direction: column;
+    }
+  
+    .catalogo img,
+    .market img {
+      margin: 0;
+      margin-top: 40px;
+      height: 350px;
+    }
+  
+    .segmenta img,
+    .leads img,
+    .promocione img {
+      margin: 0;
+      margin-top: 40px;
+      height: 300px;
+    }
+  
+    .leads .divider-right,
+    .promocione .divider-left {
+      margin-bottom: 10px;
+    }
+  
+    .catalogo .texto,
+    .market .texto,
+    .segmenta .texto,
+    .leads .texto,
+    .promocione .texto {
+      width: 100%;
+    }
+  
+    .opciones .contenido {
+      justify-content: space-between;
+    }
+  
+    .card-opciones {
+      margin: 0 20px;
+      height: 250px;
+      width: 350px;
+    }
+  
+    .card-opciones .texto {
+      top: -40px;
+    }
+  
+    .card-opciones img {
+      height: 135px;
+      top: -50px;
+    }
+  
+    .intro::before {
+      background: none
+    }
+  
+    .segmenta::before {
+      background: none
+    }
+  
+    .market::before {
+      background: none
+    }
+  
+    .promocione::before {
+      background: none
+    }
+  
+    .opciones::before {
+      background: none
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .intro {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .intro-texto {
+      width: 90%;
+    }
+  
+    .intro-img {
+      height: 250px;
+      margin-top: 20px;
+    }
+  
+    .catalogo img,
+    .market img {
+      height: 250px;
+    }
+  
+    .segmenta img,
+    .leads img,
+    .promocione img {
+      height: 200px;
+    }
+  
+    .leads .divider-right,
+    .promocione .divider-left {
+      margin-bottom: 5px;
+    }
+  
+    .texto {
+      width: 80%;
+      text-align: start;
+    }
+  
+    .opciones .contenido {
+      margin: 0;
+      flex-direction: column;
+    }
+  
+    .card-opciones {
+      margin: 50px 0;
+    }
+  }
+  
