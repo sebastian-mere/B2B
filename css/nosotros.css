@@ -479,7 +479,7 @@
   }
 
   .card-opciones img {
-    height: 180px;
+    height: 135px;
     top: -50px;
   }
 
@@ -517,6 +517,17 @@
   .intro-img {
     height: 250px;
     margin-top: 20px;
+  }
+
+  .que-es img,
+  .alcance img {
+    height: 250px;
+  }
+
+  .valor img,
+  .implementa img,
+  .desarrolla img {
+    height: 200px;
   }
 
   .implementa .divider-right,
