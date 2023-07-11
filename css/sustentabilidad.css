@@ -1,0 +1,489 @@
+.intro {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+  }
+  
+  .subtitulo {
+    padding-top: 50px;
+  }
+  
+  .intro-texto {
+    width: 60%;
+    z-index: 1;
+  }
+  
+  .intro-img {
+    height: 300px;
+    z-index: 1;
+  }
+  
+  .fondo-azul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 100px;
+  z-index: -2;
+  color: #fff;
+    background-color: #14264D;
+  }
+
+  .intro2 {
+    margin-top: 0;
+  }
+  
+  .intro2 div p,
+  .segmenta div p:last-child {
+    margin: 20px 0 0 0;
+  }
+  
+  .intro2,
+  .segmenta,
+  .market,
+  .leads {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 90%;
+  }
+  
+  .todob2b .contenido,
+  .segmenta .contenido,
+  .leads .contenido,
+  .market .contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .todob2b .texto {
+    text-align: end;
+    width: 70%;
+  }
+  
+  .market .texto{
+    width: 100%;
+  }
+  
+  .todob2b img {
+    margin-right: 5%;
+    height: 400px;
+  }
+  
+  .todob2b .contenido .texto li{
+    padding: 15px 0;
+    font-size: 24px;
+  }
+  
+  .todob2b .contenido {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .segmenta h2,
+  .opciones h2 {
+    text-align: end;
+  }
+  
+  .segmenta .texto {
+    width: 70%;
+    text-align: end;
+  }
+  
+  .leads .texto {
+    width: 70%;
+  }
+  
+  .segmenta img,
+  .leads img {
+    margin-left: 5%;
+    height: 300px;
+  }
+  
+  .leads .divider-right {
+    margin-bottom: 20px;
+  }
+  
+  .opciones {
+    height: auto;
+    width: 90%;
+  }
+  
+  .opciones .contenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+  }
+  
+  .card-opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    width: 450px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 10.8px 19.8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card-opciones .texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -80px;
+  }
+  
+  .card-opciones img {
+    height: 250px;
+    padding: 20px;
+    position: relative;
+    top: -90px;
+  }
+  
+  .card-opciones p {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .card-opciones a {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #00ba75;
+  }
+  
+  .todob2b {
+    z-index: 10;
+  }
+  
+  .segmenta {
+    z-index: 9;
+  }
+  
+  .market {
+    text-align: right;
+    z-index: 10;
+  }
+  
+  .leads {
+    z-index: 11;
+  }
+  
+  .opciones {
+    z-index: 0;
+  }
+  
+  .boton-final {
+    margin: 30px 0 80px;
+  }
+  
+  .boton-final a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px 50px;
+    border-radius: 15px;
+    background-color: #00ba75;
+  }
+  
+  @media (max-width: 1399.98px) {
+    .todob2b,
+    .segmenta,
+    .market,
+    .leads,
+    .opciones {
+      width: 100%;
+    }
+
+    .intro-texto h1 {
+        font-size: 70px;
+      }
+  }
+  
+  @media (max-width: 1199.98px) {
+    .intro-texto {
+      width: 50%;
+    }
+    .intro-img {
+      height: 250px;
+    }
+  
+    .intro-texto h1 {
+        font-size: 60px;
+      }
+
+    .todob2b,
+    .segmenta,
+    .market,
+    .leads,
+    .opciones {
+      width: 90%;
+    }
+  
+    .todob2b .texto,
+    .segmenta .texto,
+    .leads .texto {
+      width: 60%;
+    }
+  
+    .todob2b img {
+      height: 300px;
+    }
+  
+    .segmenta img,
+    .leads img {
+      height: 250px;
+    }
+  
+    .leads .divider-right {
+      margin-bottom: 10px;
+    }
+  
+    .leads .texto {
+      width: 60%;
+    }
+  
+    .card-opciones {
+      height: 250px;
+      width: 350px;
+    }
+  
+    .card-opciones .texto {
+      top: -60px;
+    }
+  
+    .card-opciones img {
+      height: 200px;
+      top: -70px;
+    }
+  }
+  
+  @media (max-width: 991.98px) {
+    .intro-texto {
+      width: 70%;
+    }
+  
+    .intro-img {
+      height: 200px;
+    }
+  
+    .intro-texto h1 {
+        font-size: 50px;
+      }
+
+    .todob2b img {
+      height: 250px;
+    }
+  
+    .todob2b .texto,
+    .segmenta .texto,
+    .leads .texto {
+      width: 70%;
+    }
+  
+    .segmenta img,
+    .leads img {
+      height: 200px;
+    }
+  
+    .leads .divider-right {
+      margin-bottom: 10px;
+    }
+  
+    .leads .texto {
+      width: 60%;
+    }
+  
+    .card-opciones {
+      height: 250px;
+      width: 300px;
+    }
+  
+    .card-opciones .texto {
+      top: -50px;
+    }
+  
+    .card-opciones img {
+      height: 200px;
+      top: -60px;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .todob2b,
+    .segmenta,
+    .market,
+    .leads,
+    .opciones {
+      width: 90%;
+    }
+  
+    .intro {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .intro-texto {
+      width: 90%;
+    }
+  
+    .intro-img {
+      height: 300px;
+      margin-top: 20px;
+    }
+  
+    .todob2b,
+    .segmenta,
+    .market,
+    .leads
+     {
+      flex-direction: column;
+    }
+  
+    .todob2b .contenido,
+    .market .contenido,
+    .segmenta .contenido,
+    .leads .contenido {
+      flex-direction: column;
+    }
+  
+    .todob2b img {
+      margin: 0;
+      margin-top: 40px;
+      height: 350px;
+    }
+  
+    .segmenta img,
+    .leads img {
+      margin: 0;
+      margin-top: 40px;
+      height: 300px;
+    }
+  
+    .leads .divider-right{
+      margin-bottom: 10px;
+    }
+  
+    .todob2b .texto,
+    .market .texto,
+    .segmenta .texto,
+    .leads .texto {
+      width: 100%;
+    }
+  
+    .opciones .contenido {
+      justify-content: space-between;
+    }
+  
+    .card-opciones {
+      margin: 0 20px;
+      height: 250px;
+      width: 350px;
+    }
+  
+    .card-opciones .texto {
+      top: -40px;
+    }
+  
+    .card-opciones img {
+      height: 135px;
+      top: -50px;
+    }
+  
+    .intro::before {
+      background: none;
+    }
+  
+    .genera::before {
+      background: none;
+    }
+  
+    .todob2b::before {
+      background: none;
+    }
+  
+    .segmenta::before {
+      background: none;
+    }
+  
+    .todob2b .contenido .texto li {
+      padding: 15px 0;
+      font-size: 16px;
+    }
+  
+    .boton-final a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 20px 50px;
+      border-radius: 15px;
+      background-color: #00ba75;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .intro {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .intro-texto {
+      width: 90%;
+    }
+  
+    .intro-img {
+      height: 250px;
+      margin-top: 20px;
+    }
+  
+    .intro-texto h1 {
+        font-size: 35px;
+      }
+
+    .todob2b img {
+      height: 250px;
+    }
+  
+    .segmenta img,
+    .leads img{
+      height: 200px;
+    }
+  
+    .leads .divider-right{
+      margin-bottom: 5px;
+    }
+  
+    .texto {
+      width: 80%;
+      text-align: start;
+    }
+  
+    .opciones .contenido {
+      margin: 0;
+      flex-direction: column;
+    }
+  
+    .card-opciones {
+      margin: 50px 0;
+    }
+  
+    .boton-final a {
+      font-size: 20px;
+    }
+  }
+  
