@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80vw;
 }
 
 .subtitulo {
@@ -11,7 +10,7 @@
 }
 
 .intro-texto {
-  width: 60%;
+  width: 70%;
   z-index: 1;
 }
 
@@ -54,16 +53,16 @@
   width: 70%;
 }
 
-.market .texto{
+.market .texto {
   width: 100%;
 }
 
 .todob2b img {
   margin-right: 5%;
-  height: 400px;
+  height: 350px;
 }
 
-.todob2b .contenido .texto li{
+.todob2b .contenido .texto li {
   padding: 15px 0;
   font-size: 24px;
 }
@@ -97,62 +96,6 @@
 
 .leads .divider-right {
   margin-bottom: 20px;
-}
-
-.opciones {
-  height: auto;
-  width: 90%;
-}
-
-.opciones .contenido {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 150px;
-}
-
-.card-opciones {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 250px;
-  width: 450px;
-  border-radius: 20px;
-  background-color: #fff;
-  box-shadow: 0px 10.8px 19.8px rgba(0, 0, 0, 0.05);
-}
-
-.card-opciones .texto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  top: -80px;
-}
-
-.card-opciones img {
-  height: 250px;
-  padding: 20px;
-  position: relative;
-  top: -90px;
-}
-
-.card-opciones p {
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.card-opciones a {
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-  background-color: #00ba75;
 }
 
 .todob2b {
@@ -201,9 +144,6 @@
 }
 
 @media (max-width: 1199.98px) {
-  .intro-texto {
-    width: 50%;
-  }
   .intro-img {
     height: 250px;
   }
@@ -239,19 +179,6 @@
     width: 60%;
   }
 
-  .card-opciones {
-    height: 250px;
-    width: 350px;
-  }
-
-  .card-opciones .texto {
-    top: -60px;
-  }
-
-  .card-opciones img {
-    height: 200px;
-    top: -70px;
-  }
 }
 
 @media (max-width: 991.98px) {
@@ -286,19 +213,6 @@
     width: 60%;
   }
 
-  .card-opciones {
-    height: 250px;
-    width: 300px;
-  }
-
-  .card-opciones .texto {
-    top: -50px;
-  }
-
-  .card-opciones img {
-    height: 200px;
-    top: -60px;
-  }
 }
 
 @media (max-width: 767.98px) {
@@ -327,8 +241,7 @@
   .todob2b,
   .segmenta,
   .market,
-  .leads
-   {
+  .leads {
     flex-direction: column;
   }
 
@@ -336,23 +249,23 @@
   .market .contenido,
   .segmenta .contenido,
   .leads .contenido {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .todob2b img {
     margin: 0;
-    margin-top: 40px;
-    height: 350px;
+    margin-bottom: 40px;
+    height: 300px;
   }
 
   .segmenta img,
   .leads img {
     margin: 0;
-    margin-top: 40px;
-    height: 300px;
+    margin-bottom: 40px;
+    height: 250px;
   }
 
-  .leads .divider-right{
+  .leads .divider-right {
     margin-bottom: 10px;
   }
 
@@ -361,41 +274,6 @@
   .segmenta .texto,
   .leads .texto {
     width: 100%;
-  }
-
-  .opciones .contenido {
-    justify-content: space-between;
-  }
-
-  .card-opciones {
-    margin: 0 20px;
-    height: 250px;
-    width: 350px;
-  }
-
-  .card-opciones .texto {
-    top: -40px;
-  }
-
-  .card-opciones img {
-    height: 135px;
-    top: -50px;
-  }
-
-  .intro::before {
-    background: none;
-  }
-
-  .genera::before {
-    background: none;
-  }
-
-  .todob2b::before {
-    background: none;
-  }
-
-  .segmenta::before {
-    background: none;
   }
 
   .todob2b .contenido .texto li {
@@ -434,26 +312,16 @@
   }
 
   .segmenta img,
-  .leads img{
+  .leads img {
     height: 200px;
   }
 
-  .leads .divider-right{
+  .leads .divider-right {
     margin-bottom: 5px;
   }
 
   .texto {
-    width: 80%;
     text-align: start;
-  }
-
-  .opciones .contenido {
-    margin: 0;
-    flex-direction: column;
-  }
-
-  .card-opciones {
-    margin: 50px 0;
   }
 
   .boton-final a {
