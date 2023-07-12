@@ -13,6 +13,14 @@ main {
   width: 80vw;
 }
 
+h1{
+  color: #00ba75;
+}
+
+h2{
+  color: #00ba75;
+}
+
 .subtitulo {
   padding-top: 50px;
 }
@@ -59,7 +67,7 @@ main {
 .clientes .contenido {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 
 .productos .texto {
@@ -74,7 +82,7 @@ main {
 
 .productos img {
   margin-right: 5%;
-  height: 280px;
+  height: 260px;
 }
 
 .productos .contenido .texto li {
@@ -96,7 +104,9 @@ main {
 }
 
 .width .p-destacado{
+  font-size: 30px;
   margin-bottom: 150px;
+  text-transform: none;
 }
 
 .boton-final {
@@ -108,9 +118,10 @@ main {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
-  padding: 20px 50px;
+  padding: 10px 90px;
   border-radius: 15px;
   background-color: #00ba75;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1399.98px) {

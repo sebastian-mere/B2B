@@ -10,7 +10,7 @@ main {
   height: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   width: 80vw;
 }
 
@@ -65,7 +65,7 @@ main {
 
 .todob2b img {
   margin-right: 5%;
-  height: 400px;
+  height: 340px;
 }
 
 .todob2b .contenido .texto li,
@@ -78,7 +78,7 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 
 .segmenta h2,
@@ -95,7 +95,7 @@ main {
 
 .segmenta img {
   margin-left: 5%;
-  height: 300px;
+  height: 240px;
 }
 
 .leads .divider-right,
@@ -105,7 +105,7 @@ main {
 
 .leads img {
   margin-right: 5%;
-  height: 300px;
+  height: 250px;
 }
 
 .promocione img {
@@ -202,9 +202,10 @@ main {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
-  padding: 20px 50px;
+  padding: 10px 90px;
   border-radius: 15px;
   background-color: #00ba75;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1399.98px) {
@@ -326,25 +327,6 @@ main {
     top: -60px;
   }
 
-  .segmenta::before {
-    top: 95%;
-    bottom: -70%;
-  }
-
-  .market::before {
-    top: 140%;
-    bottom: -135%;
-  }
-
-  .promocione::before {
-    top: 235%;
-    bottom: -180%;
-  }
-
-  .opciones::before {
-    bottom: -255%;
-  }
-
   .todob2b .contenido .texto li,
   .promocione .contenido .texto li {
     padding: 15px 0;
@@ -370,6 +352,8 @@ main {
   .intro {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: auto;
   }
 
   .intro-texto {
@@ -394,13 +378,14 @@ main {
   .promocione .contenido,
   .segmenta .contenido,
   .leads .contenido {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
   .todob2b img,
   .market img {
     margin: 0;
-    margin-top: 40px;
+    margin-bottom: 40px;
     height: 350px;
   }
 
@@ -408,7 +393,7 @@ main {
   .leads img,
   .promocione img {
     margin: 0;
-    margin-top: 40px;
+    margin-bottom: 40px;
     height: 300px;
   }
 
@@ -451,13 +436,7 @@ main {
   }
 
   .boton-final a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 20px 50px;
-    border-radius: 15px;
-    background-color: #00ba75;
+    padding: 10px 50px;
   }
 }
 
@@ -472,7 +451,7 @@ main {
   }
 
   .intro-img {
-    height: 250px;
+    height: 200px;
     margin-top: 20px;
   }
 
@@ -507,12 +486,6 @@ main {
   }
 
   .boton-final a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 20px 30px;
-    border-radius: 15px;
-    background-color: #00ba75;
+    padding: 10px 30px;
   }
 }

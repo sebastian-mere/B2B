@@ -64,7 +64,7 @@ main {
 
 .catalogo img {
   margin-left: 5%;
-  height: 400px;
+  height: 340px;
 }
 
 .catalogo .contenido .texto li,
@@ -78,7 +78,7 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 
 .segmenta h2,
@@ -95,7 +95,7 @@ main {
 
 .segmenta img {
   margin-right: 5%;
-  height: 300px;
+  height: 240px;
 }
 
 .leads .divider-right,
@@ -105,7 +105,7 @@ main {
 
 .leads img {
   margin-right: 5%;
-  height: 300px;
+  height: 250px;
 }
 
 .promocione img {
@@ -392,22 +392,23 @@ main {
   .promocione .contenido,
   .segmenta .contenido,
   .leads .contenido {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
   .catalogo img,
   .market img {
     margin: 0;
-    margin-top: 40px;
-    height: 350px;
+    margin-bottom: 40px;
+    height: 250px;
   }
 
   .segmenta img,
   .leads img,
   .promocione img {
     margin: 0;
-    margin-top: 40px;
-    height: 300px;
+    margin-bottom: 40px;
+    height: 200px;
   }
 
   .leads .divider-right,
@@ -453,7 +454,7 @@ main {
     color: #fff;
     font-size: 20px;
     font-weight: 700;
-    padding: 20px 50px;
+    padding: 10px 50px;
     border-radius: 15px;
     background-color: #00ba75;
   }
@@ -463,6 +464,8 @@ main {
   .intro {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: auto;
   }
 
   .intro-texto {
@@ -470,7 +473,7 @@ main {
   }
 
   .intro-img {
-    height: 250px;
+    height: 180px;
     margin-top: 20px;
   }
 
@@ -505,12 +508,6 @@ main {
   }
 
   .boton-final a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 20px 30px;
-    border-radius: 15px;
-    background-color: #00ba75;
+    padding: 10px 30px;
   }
 }

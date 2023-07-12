@@ -237,7 +237,7 @@ main {
   .implementa img {
     margin-left: 0;
     margin-right: 5%;
-    height: 300px;
+    height: 240px;
   }
 
   .implementa .divider-right,
@@ -258,9 +258,14 @@ main {
     top: -60px;
   }
 
+  .card-opciones .fabrica {
+    height: 200px;
+    top: -50px;
+  }
+
   .card-opciones img {
     height: 200px;
-    top: -70px;
+    top: -50px;
   }
 }
 
@@ -283,7 +288,7 @@ main {
 
   .valor img,
   .implementa img {
-    height: 250px;
+    height: 210px;
   }
 
   .implementa .divider-right,
@@ -296,7 +301,7 @@ main {
   }
 
   .desarrolla img {
-    height: 250px;
+    height: 215px;
   }
 
   .card-opciones {
@@ -353,13 +358,14 @@ main {
   .desarrolla .contenido,
   .valor .contenido,
   .implementa .contenido {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
   .que-es img,
   .alcance img {
     margin: 0;
-    margin-top: 40px;
+    margin-left: 40px;
     height: 350px;
   }
 
@@ -367,8 +373,8 @@ main {
   .implementa img,
   .desarrolla img {
     margin: 0;
-    margin-top: 40px;
-    height: 300px;
+    margin-bottom: 40px;
+    height: 215px;
   }
 
   .implementa .divider-right,
@@ -402,6 +408,11 @@ main {
     height: 135px;
     top: -50px;
   }
+
+  .card-opciones .fabrica {
+    height: 135px;
+    top: -50px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -427,7 +438,7 @@ main {
   .valor img,
   .implementa img,
   .desarrolla img {
-    height: 200px;
+    height: 180px;
   }
 
   .implementa .divider-right,
