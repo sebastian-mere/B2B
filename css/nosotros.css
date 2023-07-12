@@ -37,22 +37,27 @@ main {
 }
 
 .que-es .contenido,
-.alcance .contenido,
-.desarrolla .contenido {
+.alcance .contenido {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.desarrolla .contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
 .que-es .texto,
 .alcance .texto {
-  width: 50%;
+  width: 60%;
 }
 
 .que-es img,
 .alcance img {
   margin-left: 5%;
-  height: 340px;
+  height: 380px;
 }
 
 .valor .contenido,
@@ -60,7 +65,7 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 
 .valor h2,
@@ -70,13 +75,13 @@ main {
 }
 
 .valor .texto {
-  width: 50%;
+  width: 60%;
   text-align: end;
 }
 
 .valor img {
   margin-right: 5%;
-  height: 280px;
+  height: 260px;
 }
 
 .implementa .divider-right,
@@ -91,7 +96,7 @@ main {
 
 .implementa img {
   margin-right: 5%;
-  height: 300px;
+  height: 240px;
 }
 
 .desarrolla .texto {
@@ -100,7 +105,7 @@ main {
 
 .desarrolla img {
   margin-left: 5%;
-  height: 300px;
+  height: 240px;
 }
 
 .opciones {
@@ -121,7 +126,7 @@ main {
   align-items: center;
   flex-direction: column;
   height: 250px;
-  width: 450px;
+  width: 360px;
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 0px 10.8px 19.8px rgba(0, 0, 0, 0.05);
@@ -134,13 +139,21 @@ main {
   flex-direction: column;
   position: relative;
   top: -80px;
+  width: 200px;
+}
+
+.card-opciones .fabrica {
+  height: 230px;
+  padding: 20px;
+  position: relative;
+  top: -75px;
 }
 
 .card-opciones img {
   height: 250px;
   padding: 20px;
   position: relative;
-  top: -90px;
+  top: -75px;
 }
 
 .card-opciones p {
