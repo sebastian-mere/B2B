@@ -1,586 +1,518 @@
+main {
+  background-image: url(../img/bg-distribuidores-01.svg),
+    url(../img/bg-distribuidores-02.svg), url(../img/bg-distribuidores-03.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center bottom, center center, center top;
+}
+
 .intro {
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+}
+
+.subtitulo {
+  padding-top: 50px;
+}
+
+.intro-texto {
+  width: 60%;
+  z-index: 1;
+}
+
+.intro-img {
+  height: 300px;
+  z-index: 1;
+}
+
+.intro2 {
+  margin-top: 0;
+}
+
+.intro2,
+.segmenta,
+.market,
+.leads,
+.promocione {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 90%;
+}
+
+.todob2b .contenido,
+.segmenta .contenido,
+.market .contenido,
+.promocione .contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todob2b .texto {
+  text-align: end;
+  width: 50%;
+}
+
+.market .texto,
+.promocione .texto {
+  width: 100%;
+}
+
+.todob2b img {
+  margin-right: 5%;
+  height: 400px;
+}
+
+.todob2b .contenido .texto li,
+.promocione .contenido .texto li {
+  padding: 15px 0;
+  font-size: 24px;
+}
+.todob2b .contenido,
+.leads .contenido {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.segmenta h2,
+.leads h2,
+.opciones h2 {
+  text-align: end;
+}
+
+.segmenta .texto,
+.leads .texto {
+  width: 60%;
+  text-align: end;
+}
+
+.segmenta img {
+  margin-left: 5%;
+  height: 300px;
+}
+
+.leads .divider-right,
+.promocione .divider-left {
+  margin-bottom: 20px;
+}
+
+.leads img {
+  margin-right: 5%;
+  height: 300px;
+}
+
+.promocione img {
+  margin-left: 5%;
+  height: 300px;
+}
+
+.opciones {
+  height: auto;
+  width: 90%;
+}
+
+.opciones .contenido {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.card-opciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  width: 450px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 10.8px 19.8px rgba(0, 0, 0, 0.05);
+}
+
+.card-opciones .texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: -80px;
+}
+
+.card-opciones img {
+  height: 250px;
+  padding: 20px;
+  position: relative;
+  top: -90px;
+}
+
+.card-opciones p {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.card-opciones a {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #00ba75;
+}
+
+.todob2b {
+  z-index: 10;
+}
+
+.segmenta {
+  z-index: 9;
+}
+
+.market {
+  z-index: 10;
+}
+
+.leads {
+  z-index: 11;
+}
+
+.promocione {
+  z-index: 12;
+}
+
+.opciones {
+  z-index: 0;
+}
+
+.boton-final {
+  margin: 30px 0 80px;
+}
+
+.boton-final a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px 50px;
+  border-radius: 15px;
+  background-color: #00ba75;
+}
+
+@media (max-width: 1399.98px) {
+  .todob2b,
+  .segmenta,
+  .market,
+  .leads,
+  .promocione,
+  .opciones {
+    width: 100%;
   }
-  
-  .subtitulo {
-    padding-top: 50px;
-  }
-  
+}
+
+@media (max-width: 1199.98px) {
   .intro-texto {
-    width: 60%;
-    z-index: 1;
+    width: 50%;
   }
-  
+  .intro-img {
+    height: 250px;
+  }
+
+  .todob2b,
+  .segmenta,
+  .market,
+  .leads,
+  .promocione,
+  .opciones {
+    width: 90%;
+  }
+
+  .todob2b .texto,
+  .segmenta .texto,
+  .leads .texto {
+    width: 60%;
+  }
+
+  .todob2b img,
+  .market img {
+    height: 300px;
+  }
+
+  .segmenta img,
+  .leads img {
+    height: 250px;
+  }
+
+  .leads .divider-right,
+  .promocione .divider-left {
+    margin-bottom: 10px;
+  }
+
+  .leads .texto {
+    width: 60%;
+  }
+
+  .card-opciones {
+    height: 250px;
+    width: 350px;
+  }
+
+  .card-opciones .texto {
+    top: -60px;
+  }
+
+  .card-opciones img {
+    height: 200px;
+    top: -70px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .intro-texto {
+    width: 70%;
+  }
+
+  .intro-img {
+    height: 200px;
+  }
+
+  .todob2b img {
+    height: 250px;
+  }
+
+  .todob2b .texto,
+  .segmenta .texto,
+  .leads .texto {
+    width: 70%;
+  }
+
+  .segmenta img,
+  .leads img {
+    height: 200px;
+  }
+
+  .leads .divider-right,
+  .promocione .divider-left {
+    margin-bottom: 10px;
+  }
+
+  .leads .texto {
+    width: 60%;
+  }
+
+  .promocione img {
+    height: 250px;
+  }
+
+  .card-opciones {
+    height: 250px;
+    width: 300px;
+  }
+
+  .card-opciones .texto {
+    top: -50px;
+  }
+
+  .card-opciones img {
+    height: 200px;
+    top: -60px;
+  }
+
+  .segmenta::before {
+    top: 95%;
+    bottom: -70%;
+  }
+
+  .market::before {
+    top: 140%;
+    bottom: -135%;
+  }
+
+  .promocione::before {
+    top: 235%;
+    bottom: -180%;
+  }
+
+  .opciones::before {
+    bottom: -255%;
+  }
+
+  .todob2b .contenido .texto li,
+  .promocione .contenido .texto li {
+    padding: 15px 0;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  main {
+    background-image: url(../img/bg-distribuidores-01.svg);
+    background-position: center bottom;
+  }
+
+  .todob2b,
+  .segmenta,
+  .market,
+  .leads,
+  .promocione,
+  .opciones {
+    width: 90%;
+  }
+
+  .intro {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intro-texto {
+    width: 90%;
+  }
+
   .intro-img {
     height: 300px;
-    z-index: 1;
+    margin-top: 20px;
   }
-  
-  .intro2 {
-    margin-top: 0;
-  }
-  
-  .intro2,
+
+  .todob2b,
   .segmenta,
   .market,
   .leads,
   .promocione {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-    width: 90%;
+    flex-direction: column;
   }
-  
+
   .todob2b .contenido,
-  .segmenta .contenido,
   .market .contenido,
-  .promocione .contenido {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .promocione .contenido,
+  .segmenta .contenido,
+  .leads .contenido {
+    flex-direction: column;
   }
-  
-  .todob2b .texto {
-    text-align: end;
-    width: 50%;
+
+  .todob2b img,
+  .market img {
+    margin: 0;
+    margin-top: 40px;
+    height: 350px;
   }
-  
+
+  .segmenta img,
+  .leads img,
+  .promocione img {
+    margin: 0;
+    margin-top: 40px;
+    height: 300px;
+  }
+
+  .leads .divider-right,
+  .promocione .divider-left {
+    margin-bottom: 10px;
+  }
+
+  .todob2b .texto,
   .market .texto,
+  .segmenta .texto,
+  .leads .texto,
   .promocione .texto {
     width: 100%;
   }
-  
-  .todob2b img {
-    margin-right: 5%;
-    height: 400px;
+
+  .opciones .contenido {
+    justify-content: space-between;
   }
-  
+
+  .card-opciones {
+    margin: 0 20px;
+    height: 250px;
+    width: 350px;
+  }
+
+  .card-opciones .texto {
+    top: -40px;
+  }
+
+  .card-opciones img {
+    height: 135px;
+    top: -50px;
+  }
+
   .todob2b .contenido .texto li,
   .promocione .contenido .texto li {
     padding: 15px 0;
-    font-size: 24px;
+    font-size: 16px;
   }
-  .todob2b .contenido,
-  .leads .contenido {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .segmenta h2,
-  .leads h2,
-  .opciones h2 {
-    text-align: end;
-  }
-  
-  .segmenta .texto,
-  .leads .texto {
-    width: 60%;
-    text-align: end;
-  }
-  
-  .segmenta img {
-    margin-left: 5%;
-    height: 300px;
-  }
-  
-  .leads .divider-right,
-  .promocione .divider-left {
-    margin-bottom: 20px;
-  }
-  
-  .leads img {
-    margin-right: 5%;
-    height: 300px;
-  }
-  
-  .promocione img {
-    margin-left: 5%;
-    height: 300px;
-  }
-  
-  .opciones {
-    height: auto;
-    width: 90%;
-  }
-  
-  .opciones .contenido {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 150px;
-  }
-  
-  .card-opciones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 250px;
-    width: 450px;
-    border-radius: 20px;
-    background-color: #fff;
-    box-shadow: 0px 10.8px 19.8px rgba(0, 0, 0, 0.05);
-  }
-  
-  .card-opciones .texto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    top: -80px;
-  }
-  
-  .card-opciones img {
-    height: 250px;
-    padding: 20px;
-    position: relative;
-    top: -90px;
-  }
-  
-  .card-opciones p {
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  
-  .card-opciones a {
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: #00ba75;
-  }
-  
-  .todob2b {
-    z-index: 10;
-  }
-  
-  .segmenta {
-    z-index: 9;
-  }
-  
-  .market {
-    z-index: 10;
-  }
-  
-  .leads {
-    z-index: 11;
-  }
-  
-  .promocione {
-    z-index: 12;
-  }
-  
-  .opciones {
-    z-index: 0;
-  }
-  
-  .boton-final {
-    margin: 30px 0 80px;
-  }
-  
+
   .boton-final a {
     text-decoration: none;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     padding: 20px 50px;
     border-radius: 15px;
     background-color: #00ba75;
   }
-  /*
-  .genera::before {
-    content: "";
-    position: absolute;
-    inset: 590px 0px -490px;
-    background: url(../img/bg-m1.svg);
-    background-size: 17%;
-    background-repeat: no-repeat;
-    background-position: left center;
-    z-index: 0;
-  }
-  
-  .todob2b::before {
-    content: "";
-    position: absolute;
-    inset: 1180px 0px -1080px;
-    background: url(../img/bg-m2.svg);
-    background-size: 13%;
-    background-repeat: no-repeat;
-    background-position: right center;
-    z-index: -1;
-  }
-  
-  .segmenta::before {
-    content: "";
-    position: absolute;
-    inset: 2120px 0px -1960px;
-    background: url(../img/bg-m3.svg);
-    background-size: 21%;
-    background-repeat: no-repeat;
-    background-position: left center;
-    z-index: -2;
-  }*/
-  
-  @media (max-width: 1399.98px) {
-    .todob2b,
-    .segmenta,
-    .market,
-    .leads,
-    .promocione,
-    .opciones {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 1199.98px) {
-    .intro-texto {
-      width: 50%;
-    }
-    .intro-img {
-      height: 250px;
-    }
-  
-    .todob2b,
-    .segmenta,
-    .market,
-    .leads,
-    .promocione,
-    .opciones {
-      width: 90%;
-    }
-  
-    .todob2b .texto,
-    .segmenta .texto,
-    .leads .texto {
-      width: 60%;
-    }
-  
-    .todob2b img,
-    .market img {
-      height: 300px;
-    }
-  
-    .segmenta img,
-    .leads img {
+}
 
-      height: 250px;
-    }
-  
-    .leads .divider-right,
-    .promocione .divider-left {
-      margin-bottom: 10px;
-    }
-  
-    .leads .texto {
-      width: 60%;
-    }
-  
-    .card-opciones {
-      height: 250px;
-      width: 350px;
-    }
-  
-    .card-opciones .texto {
-      top: -60px;
-    }
-  
-    .card-opciones img {
-      height: 200px;
-      top: -70px;
-    }
-  
-    .genera::before {
-      inset: 700px 0px -490px;
-      background-size: 17%;
-    }
-  
-    .todob2b::before {
-      inset: 1240px 0px -1080px;
-      background-size: 13%;
-    }
-  
-    .segmenta::before {
-      inset: 2230px 0px -1960px;
-      background-size: 21%;
-    }
+@media (max-width: 575.98px) {
+  .intro {
+    flex-direction: column;
+    justify-content: center;
   }
-  
-  @media (max-width: 991.98px) {
-    .intro-texto {
-      width: 70%;
-    }
-  
-    .intro-img {
-      height: 200px;
-    }
-  
-    .todob2b img {
-      height: 250px;
-    }
-  
-    .todob2b .texto,
-    .segmenta .texto,
-    .leads .texto {
-      width: 70%;
-    }
-  
-    .segmenta img,
-    .leads img {
-      height: 200px;
-    }
-  
-    .leads .divider-right,
-    .promocione .divider-left {
-      margin-bottom: 10px;
-    }
-  
-    .leads .texto {
-      width: 60%;
-    }
-  
-    .promocione img {
-      height: 250px;
-    }
-  
-    .card-opciones {
-      height: 250px;
-      width: 300px;
-    }
-  
-    .card-opciones .texto {
-      top: -50px;
-    }
-  
-    .card-opciones img {
-      height: 200px;
-      top: -60px;
-    }
-  
-    .segmenta::before {
-      top: 95%;
-      bottom: -70%;
-    }
-  
-    .market::before {
-      top: 140%;
-      bottom: -135%;
-    }
-  
-    .promocione::before {
-      top: 235%;
-      bottom: -180%;
-    }
-  
-    .opciones::before {
-      bottom: -255%;
-    }
-  
-    .todob2b .contenido .texto li,
-    .promocione .contenido .texto li {
-      padding: 15px 0;
-      font-size: 20px;
-    }
-  
-    .genera::before {
-      inset: 200px 0px -490px;
-      background-size: 17%;
-    }
-  
-    .todob2b::before {
-      inset: 550px 0px -1080px;
-      background-size: 13%;
-    }
-  
-    .segmenta::before {
-      inset: 1180px 0px -1960px;
-      background-size: 21%;
-    }
+
+  .intro-texto {
+    width: 90%;
   }
-  
-  @media (max-width: 767.98px) {
-    .todob2b,
-    .segmenta,
-    .market,
-    .leads,
-    .promocione,
-    .opciones {
-      width: 90%;
-    }
-  
-    .intro {
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-    .intro-texto {
-      width: 90%;
-    }
-  
-    .intro-img {
-      height: 300px;
-      margin-top: 20px;
-    }
-  
-    .todob2b,
-    .segmenta,
-    .market,
-    .leads,
-    .promocione {
-      flex-direction: column;
-    }
-  
-    .todob2b .contenido,
-    .market .contenido,
-    .promocione .contenido,
-    .segmenta .contenido,
-    .leads .contenido {
-      flex-direction: column;
-    }
-  
-    .todob2b img,
-    .market img {
-      margin: 0;
-      margin-top: 40px;
-      height: 350px;
-    }
-  
-    .segmenta img,
-    .leads img,
-    .promocione img {
-      margin: 0;
-      margin-top: 40px;
-      height: 300px;
-    }
-  
-    .leads .divider-right,
-    .promocione .divider-left {
-      margin-bottom: 10px;
-    }
-  
-    .todob2b .texto,
-    .market .texto,
-    .segmenta .texto,
-    .leads .texto,
-    .promocione .texto {
-      width: 100%;
-    }
-  
-    .opciones .contenido {
-      justify-content: space-between;
-    }
-  
-    .card-opciones {
-      margin: 0 20px;
-      height: 250px;
-      width: 350px;
-    }
-  
-    .card-opciones .texto {
-      top: -40px;
-    }
-  
-    .card-opciones img {
-      height: 135px;
-      top: -50px;
-    }
-  
-    .intro::before {
-      background: none;
-    }
-  
-    .genera::before {
-      background: none;
-    }
-  
-    .todob2b::before {
-      background: none;
-    }
-  
-    .segmenta::before {
-      background: none;
-    }
-  
-    .todob2b .contenido .texto li,
-    .promocione .contenido .texto li {
-      padding: 15px 0;
-      font-size: 16px;
-    }
-  
-    .boton-final a {
-      text-decoration: none;
-      color: #fff;
-      font-size: 20px;
-      font-weight: 700;
-      padding: 20px 50px;
-      border-radius: 15px;
-      background-color: #00ba75;
-    }
+
+  .intro-img {
+    height: 250px;
+    margin-top: 20px;
   }
-  
-  @media (max-width: 575.98px) {
-    .intro {
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-    .intro-texto {
-      width: 90%;
-    }
-  
-    .intro-img {
-      height: 250px;
-      margin-top: 20px;
-    }
-  
-    .todob2b img,
-    .market img {
-      height: 250px;
-    }
-  
-    .segmenta img,
-    .leads img,
-    .promocione img {
-      height: 200px;
-    }
-  
-    .leads .divider-right,
-    .promocione .divider-left {
-      margin-bottom: 5px;
-    }
-  
-    .texto {
-      width: 80%;
-      text-align: start;
-    }
-  
-    .opciones .contenido {
-      margin: 0;
-      flex-direction: column;
-    }
-  
-    .card-opciones {
-      margin: 50px 0;
-    }
-  
-    .boton-final a {
-      text-decoration: none;
-      color: #fff;
-      font-size: 20px;
-      font-weight: 700;
-      padding: 20px 30px;
-      border-radius: 15px;
-      background-color: #00ba75;
-    }
+
+  .todob2b img,
+  .market img {
+    height: 250px;
   }
-  
+
+  .segmenta img,
+  .leads img,
+  .promocione img {
+    height: 200px;
+  }
+
+  .leads .divider-right,
+  .promocione .divider-left {
+    margin-bottom: 5px;
+  }
+
+  .texto {
+    width: 80%;
+    text-align: start;
+  }
+
+  .opciones .contenido {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .card-opciones {
+    margin: 50px 0;
+  }
+
+  .boton-final a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 30px;
+    border-radius: 15px;
+    background-color: #00ba75;
+  }
+}

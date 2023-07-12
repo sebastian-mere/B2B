@@ -1,3 +1,11 @@
+main {
+  background-image: url(../img/bg-distribuidores-01.svg),
+    url(../img/bg-marcas.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center bottom, center center;
+}
+
 .intro {
   height: auto;
   display: flex;
@@ -199,39 +207,6 @@
   background-color: #00ba75;
 }
 
-.genera::before {
-  content: "";
-  position: absolute;
-  inset: 590px 0px -490px;
-  background: url(../img/bg-m1.svg);
-  background-size: 17%;
-  background-repeat: no-repeat;
-  background-position: left center;
-  z-index: 0;
-}
-
-.catalogo::before {
-  content: "";
-  position: absolute;
-  inset: 1180px 0px -1080px;
-  background: url(../img/bg-m2.svg);
-  background-size: 13%;
-  background-repeat: no-repeat;
-  background-position: right center;
-  z-index: -1;
-}
-
-.segmenta::before {
-  content: "";
-  position: absolute;
-  inset: 2120px 0px -1960px;
-  background: url(../img/bg-m3.svg);
-  background-size: 21%;
-  background-repeat: no-repeat;
-  background-position: left center;
-  z-index: -2;
-}
-
 @media (max-width: 1399.98px) {
   .catalogo,
   .segmenta,
@@ -300,21 +275,6 @@
     height: 200px;
     top: -70px;
   }
-
-  .genera::before {
-    inset: 700px 0px -490px;
-    background-size: 17%;
-  }
-
-  .catalogo::before {
-    inset: 1240px 0px -1080px;
-    background-size: 13%;
-  }
-
-  .segmenta::before {
-    inset: 2230px 0px -1960px;
-    background-size: 21%;
-  }
 }
 
 @media (max-width: 991.98px) {
@@ -368,25 +328,6 @@
     top: -60px;
   }
 
-  .segmenta::before {
-    top: 95%;
-    bottom: -70%;
-  }
-
-  .market::before {
-    top: 140%;
-    bottom: -135%;
-  }
-
-  .promocione::before {
-    top: 235%;
-    bottom: -180%;
-  }
-
-  .opciones::before {
-    bottom: -255%;
-  }
-
   .catalogo .contenido .texto li,
   .promocione .contenido .texto li {
     padding: 15px 0;
@@ -410,6 +351,11 @@
 }
 
 @media (max-width: 767.98px) {
+  main {
+    background-image: url(../img/bg-distribuidores-01.svg);
+    background-position: center bottom;
+  }
+
   .catalogo,
   .segmenta,
   .market,
@@ -494,22 +440,6 @@
   .card-opciones img {
     height: 135px;
     top: -50px;
-  }
-
-  .intro::before {
-    background: none;
-  }
-
-  .genera::before {
-    background: none;
-  }
-
-  .catalogo::before {
-    background: none;
-  }
-
-  .segmenta::before {
-    background: none;
   }
 
   .catalogo .contenido .texto li,

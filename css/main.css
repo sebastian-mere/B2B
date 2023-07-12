@@ -147,12 +147,14 @@ p {
     padding: 10px 50px;
   }
 
-  .destacado, .destacado-left {
+  .destacado,
+  .destacado-left {
     font-size: 45px;
     line-height: 45px;
   }
 
-  .destacado2, .destacado2-left {
+  .destacado2,
+  .destacado2-left {
     font-size: 35px;
     line-height: 40px;
   }
@@ -167,7 +169,7 @@ p {
     margin: 80px 0;
   }
 
- h1 {
+  h1 {
     font-size: 60px;
     line-height: 60px;
   }
@@ -228,12 +230,14 @@ p {
     font-size: 16px;
   }
 
-  .destacado, .destacado-left {
+  .destacado,
+  .destacado-left {
     font-size: 35px;
     line-height: 35px;
   }
 
-  .destacado2, .destacado2-left {
+  .destacado2,
+  .destacado2-left {
     font-size: 25px;
     line-height: 30px;
   }

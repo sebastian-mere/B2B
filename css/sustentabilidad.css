@@ -1,3 +1,10 @@
+main {
+  background-image: url(../img/bg-sustentabilidad-01.svg), url(../img/bg-sustentabilidad-02.svg) ;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center bottom, center center;
+}
+
 .intro {
   height: auto;
   display: flex;
@@ -89,7 +96,7 @@
 }
 
 .width .p-destacado{
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .boton-final {

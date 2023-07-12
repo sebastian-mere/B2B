@@ -1,3 +1,11 @@
+main {
+  background-image: url(../img/bg-nosotros-03.svg),
+    url(../img/bg-nosotros-02.svg), url(../img/bg-nosotros-01.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center bottom, center center, center top;
+}
+
 .intro {
   height: auto;
   display: flex;
@@ -148,7 +156,7 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
-  background-color: #00BA75;
+  background-color: #00ba75;
 }
 
 .que-es {
@@ -173,76 +181,6 @@
 
 .opciones {
   z-index: 0;
-}
-
-.intro::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: -100%;
-  background: url(../img/bg1.svg);
-  background-size: 33%;
-  background-repeat: no-repeat;
-  background-position: right top;
-  z-index: 0;
-}
-
-.valor::before {
-  content: "";
-  position: absolute;
-  top: 90%;
-  left: 0;
-  right: 0;
-  bottom: -120%;
-  background: url(../img/bg2.svg);
-  background-size: 25%;
-  background-repeat: no-repeat;
-  background-position: left center;
-  z-index: -1;
-}
-
-.alcance::before {
-  content: "";
-  position: absolute;
-  top: 125%;
-  left: 0;
-  right: 0;
-  bottom: -250%;
-  background: url(../img/bg3.svg);
-  background-size: 33%;
-  background-repeat: no-repeat;
-  background-position: right center;
-  z-index: -2;
-}
-
-.desarrolla::before {
-  content: "";
-  position: absolute;
-  top: 260%;
-  left: 0;
-  right: 0;
-  bottom: -270%;
-  background: url(../img/bg4.svg);
-  background-size: 17%;
-  background-repeat: no-repeat;
-  background-position: left center;
-  z-index: -1;
-}
-
-.opciones::before {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 0;
-  right: 0;
-  bottom: -280%;
-  background: url(../img/bg5.svg);
-  background-size: 17%;
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  z-index: -2;
 }
 
 @media (max-width: 1399.98px) {
@@ -311,26 +249,6 @@
     height: 200px;
     top: -70px;
   }
-
-  .intro::before {
-    background-size: 44%;
-  }
-
-  .valor::before {
-    background-size: 35%;
-  }
-
-  .alcance::before {
-    background-size: 45%;
-  }
-
-  .desarrolla::before {
-    background-size: 25%;
-  }
-
-  .opciones::before {
-    background-size: 23%;
-  }
 }
 
 @media (max-width: 991.98px) {
@@ -381,28 +299,16 @@
     height: 200px;
     top: -60px;
   }
-
-  .valor::before {
-    top: 95%;
-    bottom: -70%;
-  }
-
-  .alcance::before {
-    top: 140%;
-    bottom: -135%;
-  }
-
-  .desarrolla::before {
-    top: 235%;
-    bottom: -180%;
-  }
-
-  .opciones::before {
-    bottom: -230%;
-  }
 }
 
 @media (max-width: 767.98px) {
+  main {
+    background-image: url(../img/bg-nosotros-01.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
   .que-es,
   .valor,
   .alcance,
@@ -482,26 +388,6 @@
   .card-opciones img {
     height: 135px;
     top: -50px;
-  }
-
-  .intro::before {
-    background: none
-  }
-
-  .valor::before {
-    background: none
-  }
-
-  .alcance::before {
-    background: none
-  }
-
-  .desarrolla::before {
-    background: none
-  }
-
-  .opciones::before {
-    background: none
   }
 }
 
