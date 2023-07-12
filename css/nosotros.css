@@ -52,7 +52,7 @@ main {
 .que-es img,
 .alcance img {
   margin-left: 5%;
-  height: 400px;
+  height: 340px;
 }
 
 .valor .contenido,
@@ -75,8 +75,8 @@ main {
 }
 
 .valor img {
-  margin-left: 5%;
-  height: 350px;
+  margin-right: 5%;
+  height: 280px;
 }
 
 .implementa .divider-right,
@@ -90,7 +90,7 @@ main {
 }
 
 .implementa img {
-  margin-left: 5%;
+  margin-right: 5%;
   height: 300px;
 }
 
