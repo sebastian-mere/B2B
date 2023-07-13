@@ -14,6 +14,14 @@ main {
   width: 80vw;
 }
 
+.subtitulo h3{
+  font-style: unset;
+}
+
+.divider{
+  margin-top: 15px;
+}
+
 .subtitulo {
   padding-top: 50px;
 }
@@ -44,13 +52,18 @@ main {
   width: 90%;
 }
 
+.market{
+  text-align: right;
+}
+
 .todob2b .contenido,
 .segmenta .contenido,
 .market .contenido,
-.promocione .contenido {
+.promocione .contenido,
+.leads .contenido {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 
 .todob2b .texto {
@@ -73,8 +86,7 @@ main {
   padding: 15px 0;
   font-size: 24px;
 }
-.todob2b .contenido,
-.leads .contenido {
+.todob2b .contenido {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -82,20 +94,24 @@ main {
 }
 
 .segmenta h2,
-.leads h2,
 .opciones h2 {
   text-align: end;
 }
 
+.segmenta .texto{
+  text-align: end;
+}
+
+
+
 .segmenta .texto,
 .leads .texto {
   width: 60%;
-  text-align: end;
 }
 
 .segmenta img {
   margin-left: 5%;
-  height: 240px;
+  height: 220px;
 }
 
 .leads .divider-right,
