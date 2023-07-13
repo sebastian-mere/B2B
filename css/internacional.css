@@ -65,7 +65,7 @@ h3 {
 .market .contenido {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 
 .todob2b .texto {
@@ -88,10 +88,7 @@ h3 {
 }
 
 .todob2b .contenido {
-  display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .segmenta h2,
@@ -277,6 +274,7 @@ h3 {
   .market .contenido,
   .segmenta .contenido,
   .leads .contenido {
+    align-items: center;
     flex-direction: column-reverse;
   }
 

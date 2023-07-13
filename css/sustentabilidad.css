@@ -223,7 +223,9 @@ h2{
     margin-top: 20px;
   }
   
+  .clientes .contenido,
   .productos .contenido{
+    align-items: center;
     flex-direction: column-reverse;;
   }
   

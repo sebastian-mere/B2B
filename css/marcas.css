@@ -50,7 +50,7 @@ main {
 .promocione .contenido {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 
 .catalogo .texto {
