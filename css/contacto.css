@@ -1,0 +1,120 @@
+h1{
+    font-size: 55px;
+}
+
+.margin{
+    margin: 50px 0;
+}
+
+form {
+  width: 80%;
+  padding: 40px 80px 30px 80px;
+  margin-bottom: 100px;
+  border-radius: 15px;
+  background-color: #fff;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "nombre apellido"
+    "telefono cif"
+    "empresa empresa"
+    "email email"
+    "opcion opcion"
+    "ayuda ayuda"
+    "boton boton";
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form .campo input,
+.form .campo select,
+.form .campo textarea {
+  padding: 0.5em 1em;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #707070;
+  background: #fff;
+}
+
+.warning {
+  padding: 0.5em 1em 0;
+  font-size: 14px;
+  color: #e82727;
+}
+
+.enviar {
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
+  padding: 0.5em 1em;
+  width: 200px;
+  border-radius: 15px;
+  background-color: #00ba75;
+  border: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#nombre {
+  grid-area: nombre;
+}
+
+#apellido {
+  grid-area: apellido;
+}
+
+#telefono {
+  grid-area: telefono;
+}
+
+#cif {
+  grid-area: cif;
+}
+
+#empresa {
+  grid-area: empresa;
+}
+
+#email {
+  grid-area: email;
+}
+
+#opcion {
+  grid-area: opcion;
+}
+
+#ayuda {
+  grid-area: ayuda;
+}
+
+#boton {
+    display: flex;
+    justify-content: center;
+  grid-area: boton;
+}
+
+@media (max-width: 767.98px) {
+  form {
+    padding: 40px 60px 30px 60px;
+    grid-template-areas:
+      "nombre "
+      "apellido"
+      "telefono "
+      "cif"
+      "empresa "
+      "email "
+      "opcion "
+      "ayuda "
+      "boton ";
+  }
+}
+
+@media (max-width: 575.98px) {
+    form {
+        width: 90%;
+        padding: 40px 30px 30px 30px;
+      }
+}
