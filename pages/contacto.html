@@ -22,7 +22,9 @@
   <body>
     <header>
       <div class="logo">
-        <img src="../img/logo.png" alt="Logo TodoB2B" />
+        <a href="../index.html"
+          ><img src="../img/logo.png" alt="Logo TodoB2B"
+        /></a>
       </div>
       <nav>
         <div class="hamburger-menu">
@@ -98,7 +100,7 @@
           <li><a href="planes.html">Planes</a></li>
         </ul>
       </nav>
-      <div class="contact-button" class="activo">
+      <div class="contact-button">
         <a href="#">Contacto</a>
       </div>
     </header>
@@ -111,113 +113,111 @@
 
       <div class="contacto form">
         <form method="POST" action="procesar.php">
-            <div class="campo mitad" id="nombre">
-              <div>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Nombre"
-                  id="nombre"
-                  name="nombre"
-                />
-              </div>
-              <div class="warning" id="msgNombre"></div>
+          <div class="campo mitad" id="nombre">
+            <div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nombre"
+                id="nombre"
+                name="nombre"
+              />
             </div>
-            <div class="campo mitad" id="apellido">
-              <div>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Apellido"
-                  id="apellido"
-                  name="apellido"
-                />
-              </div>
-              <div class="warning" id="msgApellido"></div>
+            <div class="warning" id="msgNombre"></div>
+          </div>
+          <div class="campo mitad" id="apellido">
+            <div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Apellido"
+                id="apellido"
+                name="apellido"
+              />
             </div>
-            <div class="campo mitad" id="telefono">
-              <div>
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="Teléfono"
-                  id="telefono"
-                  name="telefono"
-                />
-              </div>
-              <div class="warning" id="msgTelefono"></div>
+            <div class="warning" id="msgApellido"></div>
+          </div>
+          <div class="campo mitad" id="telefono">
+            <div>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Teléfono"
+                id="telefono"
+                name="telefono"
+              />
             </div>
-            <div class="campo mitad" id="cif">
-              <div>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="CIF"
-                  id="cif"
-                  name="cif"
-                />
-              </div>
-              <div class="warning" id="msgCIF"></div>
+            <div class="warning" id="msgTelefono"></div>
+          </div>
+          <div class="campo mitad" id="cif">
+            <div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="CIF"
+                id="cif"
+                name="cif"
+              />
             </div>
-            <div class="campo" id="empresa">
-              <div>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Empresa"
-                  id="empresa"
-                  name="empresa"
-                />
-              </div>
-              <div class="warning" id="msgEmpresa"></div>
+            <div class="warning" id="msgCIF"></div>
+          </div>
+          <div class="campo" id="empresa">
+            <div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Empresa"
+                id="empresa"
+                name="empresa"
+              />
             </div>
-            <div class="campo" id="email">
-              <div>
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Email"
-                  id="email"
-                  name="email"
-                />
-              </div>
-              <div class="warning" id="msgEmail"></div>
+            <div class="warning" id="msgEmpresa"></div>
+          </div>
+          <div class="campo" id="email">
+            <div>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                id="email"
+                name="email"
+              />
             </div>
-            <div class="campo" id="opcion">
-              <div>
-                <select
-                  class="form-select"
-                  aria-label="Elige una opción"
-                  id="opcion"
-                  name="opcion"
-                >
-                  <option value="" selected>Elige una opción:</option>
-                  <option value="opcion1">TodoB2B para marcas</option>
-                  <option value="opcion2">TodoB2B para distribuidores</option>
-                </select>
-              </div>
-              <div class="warning" id="msgOpcion"></div>
+            <div class="warning" id="msgEmail"></div>
+          </div>
+          <div class="campo" id="opcion">
+            <div>
+              <select
+                class="form-select"
+                aria-label="Elige una opción"
+                id="opcion"
+                name="opcion"
+              >
+                <option value="" selected>Elige una opción:</option>
+                <option value="opcion1">TodoB2B para marcas</option>
+                <option value="opcion2">TodoB2B para distribuidores</option>
+              </select>
             </div>
-            <div class="campo" id="ayuda">
-              <div>
-                <textarea
-                  class="form-control"
-                  id="ayuda"
-                  name="ayuda"
-                  rows="4"
-                  cols="50"
-                  placeholder="¿Cómo podemos ayudarte?"
-                ></textarea>
-              </div>
-              <div class="warning" id="msgAyuda"></div>
+            <div class="warning" id="msgOpcion"></div>
+          </div>
+          <div class="campo" id="ayuda">
+            <div>
+              <textarea
+                class="form-control"
+                id="ayuda"
+                name="ayuda"
+                rows="4"
+                cols="50"
+                placeholder="¿Cómo podemos ayudarte?"
+              ></textarea>
             </div>
-            <div id="boton">
-              <button class="enviar" type="submit" id="simular">Enviar</button>
-            </div>
-          </form>
-          
+            <div class="warning" id="msgAyuda"></div>
+          </div>
+          <div id="boton">
+            <button class="enviar" type="submit" id="simular">Enviar</button>
+          </div>
+        </form>
       </div>
-
     </main>
 
     <footer>
@@ -237,7 +237,7 @@
         <li class="separador">|</li>
         <li><a href="planes.html">Planes</a></li>
         <li class="separador">|</li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#">Contacto</a></li>
       </ul>
       <div class="sm-footer">
         <a href="#">
