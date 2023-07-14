@@ -281,14 +281,12 @@ h3 {
   .todob2b img {
     margin: 0;
     margin-bottom: 40px;
-    height: 300px;
   }
 
   .segmenta img,
   .leads img {
     margin: 0;
     margin-bottom: 40px;
-    height: 250px;
   }
 
   .leads .divider-right {
@@ -301,6 +299,15 @@ h3 {
   .leads .texto {
     width: 100%;
   }
+
+  .segmenta h2,
+.opciones h2 {
+  text-align: center;
+}
+
+.intro .divider-left{
+  margin-left: 0;
+}
 
   .todob2b .contenido .texto li {
     padding: 15px 0;

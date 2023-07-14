@@ -23,7 +23,7 @@ nav {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 
@@ -80,7 +80,13 @@ nav {
   text-align: end;
 }
 
+.ocultar {
+  display: none;
+}
+
 .contact-button a {
+  position: relative;
+  left: -10px;
   text-decoration: none;
   color: #1e1e1e;
   padding: 10px 20px;
@@ -92,21 +98,27 @@ nav {
   font-weight: bolder;
 }
 
+@media (max-width: 1399.98px) {
+  .menu li {
+    margin: 0 15px;
+  }
+}
+
 @media (max-width: 1199.98px) {
   header {
     padding: 10px 30px;
   }
 
   .menu {
-    margin-left: 30px;
+    margin-left: 0px;
   }
 
   .menu li {
-    margin: 0 15px;
+    margin: 0 5px;
   }
 
   .contact-button a {
-    display: none;
+    left: -25px;
   }
 }
 
@@ -159,5 +171,10 @@ nav {
 
   .menu li a i {
     display: none;
+  }
+
+  .contact-button a {
+    left: 0;
+    top: 5px
   }
 }

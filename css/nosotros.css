@@ -345,6 +345,10 @@ main {
     margin-top: 20px;
   }
 
+  .intro .divider-left{
+    margin-left: 0;
+  }
+
   .que-es,
   .valor,
   .alcance,
@@ -365,8 +369,9 @@ main {
   .que-es img,
   .alcance img {
     margin: 0;
-    margin-left: 40px;
-    height: 350px;
+    margin-bottom: 40px;
+    margin-left:30px;
+    height: 265px;
   }
 
   .valor img,
@@ -374,13 +379,19 @@ main {
   .desarrolla img {
     margin: 0;
     margin-bottom: 40px;
-    height: 215px;
+    height: 180px;
   }
 
   .implementa .divider-right,
   .desarrolla .divider-left {
     margin-bottom: 10px;
   }
+
+  .valor h2,
+.implementa h2,
+.opciones h2 {
+  text-align: center;
+}
 
   .que-es .texto,
   .alcance .texto,

@@ -379,6 +379,10 @@ main {
     margin-top: 20px;
   }
 
+  .intro .divider-left{
+    margin-left: 0;
+  }
+
   .catalogo,
   .segmenta,
   .market,
@@ -423,6 +427,12 @@ main {
   .promocione .texto {
     width: 100%;
   }
+
+  .segmenta h2,
+.leads h2,
+.opciones h2 {
+  text-align: center;
+}
 
   .opciones .contenido {
     justify-content: space-between;

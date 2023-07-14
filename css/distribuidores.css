@@ -356,6 +356,11 @@ main {
     background-position: center bottom;
   }
 
+  .segmenta h2,
+.opciones h2 {
+  text-align: center;
+}
+
   .todob2b,
   .segmenta,
   .market,
@@ -381,6 +386,10 @@ main {
     margin-top: 20px;
   }
 
+  .intro .divider-left{
+    margin-left: 0;
+  }
+
   .todob2b,
   .segmenta,
   .market,
@@ -402,7 +411,6 @@ main {
   .market img {
     margin: 0;
     margin-bottom: 40px;
-    height: 350px;
   }
 
   .segmenta img,
@@ -410,7 +418,6 @@ main {
   .promocione img {
     margin: 0;
     margin-bottom: 40px;
-    height: 300px;
   }
 
   .leads .divider-right,
@@ -449,6 +456,7 @@ main {
   .promocione .contenido .texto li {
     padding: 15px 0;
     font-size: 16px;
+    text-align: start;
   }
 
   .boton-final a {

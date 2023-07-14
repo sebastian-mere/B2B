@@ -217,6 +217,7 @@ p {
 
   h2 {
     font-size: 30px;
+    text-align: center;
   }
 
   h3 {
@@ -225,6 +226,7 @@ p {
 
   p {
     font-size: 16px;
+    text-align: center;
   }
 
   .p-destacado {
@@ -235,12 +237,14 @@ p {
   .destacado-left {
     font-size: 35px;
     line-height: 35px;
+    text-align: center;
   }
 
   .destacado2,
   .destacado2-left {
     font-size: 25px;
     line-height: 30px;
+    text-align: center;
   }
 
   .divider-left,
@@ -250,6 +254,13 @@ p {
     height: 2px;
     margin-top: 10px;
     margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: 45%;
+  }
+
+  .divider-text, .divider-text-right{
+    width: 4%;
+    margin-right: 48%;
   }
 }
 
