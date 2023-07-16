@@ -254,6 +254,10 @@ h3 {
     justify-content: center;
   }
 
+  .subtitulo h3{
+    text-align: center;
+  }
+
   .intro-texto {
     width: 90%;
   }

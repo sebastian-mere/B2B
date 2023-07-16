@@ -377,6 +377,10 @@ main {
     width: auto;
   }
 
+  .subtitulo h3{
+    text-align: center;
+  }
+
   .intro-texto {
     width: 90%;
   }
@@ -433,6 +437,11 @@ main {
     width: 100%;
   }
 
+  .todob2b ul,
+  .promocione ul{
+    list-style-type: none;
+  }
+
   .opciones .contenido {
     justify-content: space-between;
   }
@@ -456,7 +465,7 @@ main {
   .promocione .contenido .texto li {
     padding: 15px 0;
     font-size: 16px;
-    text-align: start;
+    text-align: center;
   }
 
   .boton-final a {
@@ -493,11 +502,6 @@ main {
   .leads .divider-right,
   .promocione .divider-left {
     margin-bottom: 5px;
-  }
-
-  .texto {
-    width: 80%;
-    text-align: start;
   }
 
   .opciones .contenido {

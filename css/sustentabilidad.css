@@ -212,6 +212,10 @@ h2{
     flex-direction: column;
     justify-content: center;
   }
+
+  .subtitulo h3{
+    text-align: center;
+  }
   
   .intro-texto {
     width: 90%;

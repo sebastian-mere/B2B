@@ -336,6 +336,10 @@ main {
     width: 90%;
   }
 
+  .subtitulo h3{
+    text-align: center;
+  }
+
   .intro-texto {
     width: 90%;
   }

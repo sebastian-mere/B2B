@@ -370,6 +370,10 @@ main {
     justify-content: center;
   }
 
+  .subtitulo h3{
+    text-align: center;
+  }
+
   .intro-texto {
     width: 90%;
   }
@@ -453,10 +457,16 @@ main {
     top: -50px;
   }
 
+  .catalogo .contenido .texto ul,
+  .promocione .contenido .texto ul {
+    list-style-type: none;
+  }
+
   .catalogo .contenido .texto li,
   .promocione .contenido .texto li {
     padding: 15px 0;
     font-size: 16px;
+    text-align: center;
   }
 
   .boton-final a {
