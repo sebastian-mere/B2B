@@ -5,7 +5,7 @@ planContainers.forEach(function(container) {
 
   titulo.addEventListener('click', function() {
 
-    container.classList.toggle('activo');
+    container.classList.toggle('visible');
   });
 
 });
