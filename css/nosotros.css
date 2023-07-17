@@ -374,7 +374,6 @@ main {
   .alcance img {
     margin: 0;
     margin-bottom: 40px;
-    margin-left:30px;
     height: 265px;
   }
 
@@ -432,7 +431,7 @@ main {
 
 @media (max-width: 575.98px) {
   .intro {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
   }
 
@@ -442,7 +441,8 @@ main {
 
   .intro-img {
     height: 250px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 0;
   }
 
   .que-es img,
