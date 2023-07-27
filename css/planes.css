@@ -1,3 +1,7 @@
+.margin h3{
+  margin-top: 20px;
+}
+
 .planes {
   display: flex;
   justify-content: center;
