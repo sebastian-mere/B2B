@@ -11,12 +11,33 @@
     <link rel="stylesheet" href="../css/contacto.css" />
     <link rel="stylesheet" type="text/css" href="../css/footer.css" />
     <link rel="stylesheet" href="https://use.typekit.net/pcw7aao.css" />
+    <link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
+
     <script
       src="https://kit.fontawesome.com/7b28d5bc85.js"
       crossorigin="anonymous"
     ></script>
 
     <title>TodoB2B - Contacto</title>
+    <meta name="title" content="TodoB2B" />
+    <meta
+      name="description"
+      content=""
+    />
+    <meta
+      name="keywords"
+      content=""
+    />
+    <meta name="language" content="sp" />
+    <meta name="geo.country" content="AR" />
+    <meta name="geo.region" content="AR" />
+    <meta
+      name="geo.placename"
+      content="Argentina, Buenos Aires, Capital Federal"
+    />
+    <meta name="Geography" content="Argentina" />
+    <meta name="Country" content="AR" />
+    <meta name="city" content="Ciudad Autónoma de Buenos Aires" />
   </head>
 
   <body>
@@ -114,8 +135,8 @@
       </div>
 
       <div class="contacto form">
-        <form method="POST" action="procesar.php">
-          <div class="campo mitad" id="nombre">
+        <form method="POST" action="../php/procesar.php">
+          <div class="campo mitad" >
             <div>
               <input
                 type="text"
@@ -127,7 +148,7 @@
             </div>
             <div class="warning" id="msgNombre"></div>
           </div>
-          <div class="campo mitad" id="apellido">
+          <div class="campo mitad" >
             <div>
               <input
                 type="text"
@@ -139,7 +160,7 @@
             </div>
             <div class="warning" id="msgApellido"></div>
           </div>
-          <div class="campo mitad" id="telefono">
+          <div class="campo mitad" >
             <div>
               <input
                 type="number"
@@ -151,7 +172,7 @@
             </div>
             <div class="warning" id="msgTelefono"></div>
           </div>
-          <div class="campo mitad" id="cif">
+          <div class="campo mitad" >
             <div>
               <input
                 type="text"
@@ -163,7 +184,7 @@
             </div>
             <div class="warning" id="msgCIF"></div>
           </div>
-          <div class="campo" id="empresa">
+          <div class="campo" >
             <div>
               <input
                 type="text"
@@ -175,19 +196,19 @@
             </div>
             <div class="warning" id="msgEmpresa"></div>
           </div>
-          <div class="campo" id="email">
+          <div class="campo" >
             <div>
               <input
                 type="email"
                 class="form-control"
                 placeholder="Email"
                 id="email"
-                name="name"
+                name="email"
               />
             </div>
             <div class="warning" id="msgEmail"></div>
           </div>
-          <div class="campo" id="opcion">
+          <div class="campo" >
             <div>
               <select
                 class="form-select"
@@ -195,7 +216,7 @@
                 id="opcion"
                 name="opcion"
               >
-                <option value="" selected>Elige una opción:</option>
+                <option value="elige" selected>Elige una opción:</option>
                 <option value="marcas">TodoB2B para marcas</option>
                 <option value="distribuidores">
                   TodoB2B para distribuidores
@@ -212,7 +233,7 @@
             </div>
             <div class="warning" id="msgOpcion"></div>
           </div>
-          <div class="campo" id="ayuda">
+          <div class="campo" >
             <div>
               <textarea
                 class="form-control"
@@ -268,5 +289,6 @@
     </footer>
 
     <script src="../js/menu.js"></script>
+    <script src="../js/validacion.js"></script>
   </body>
 </html>
