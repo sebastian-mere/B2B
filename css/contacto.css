@@ -66,35 +66,35 @@ form {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-#nombre {
+#campo-nombre {
   grid-area: nombre;
 }
 
-#apellido {
+#campo-apellido {
   grid-area: apellido;
 }
 
-#telefono {
+#campo-telefono {
   grid-area: telefono;
 }
 
-#cif {
+#campo-cif {
   grid-area: cif;
 }
 
-#empresa {
+#campo-empresa {
   grid-area: empresa;
 }
 
-#email {
+#campo-email {
   grid-area: email;
 }
 
-#opcion {
+#campo-opcion {
   grid-area: opcion;
 }
 
-#ayuda {
+#campo-ayuda {
   grid-area: ayuda;
 }
 
